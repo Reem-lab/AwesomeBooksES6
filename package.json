@@ -1,0 +1,40 @@
+{
+  "name": "awesomebookses6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hint": "npx hint .",
+    "hintf": "npx hint --fix .",
+    "lint": "npx eslint .",
+    "lintf": "npx eslint --fix .",
+    "style": "npx stylelint \"**/*.{css,scss}\"",
+    "stylef": "npx stylelint --fix \"**/*.{css,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reem-lab/AwesomeBooksES6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reem-lab/AwesomeBooksES6/issues"
+  },
+  "homepage": "https://github.com/Reem-lab/AwesomeBooksES6#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "luxon": "^2.3.0",
+    "three": "^0.136.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
