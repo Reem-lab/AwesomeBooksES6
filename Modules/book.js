@@ -2,7 +2,7 @@ const bookContainer = document.querySelector(".book-container");
 const inpTitle = document.querySelector("#title");
 const inpAutor = document.querySelector("#author");
 
-class Book {
+export class Book {
     static collection = []
   
     constructor(title, author) {
@@ -54,6 +54,3 @@ class Book {
       this.showBook(book)
     }
   }
-
-
- export class Book {...};
