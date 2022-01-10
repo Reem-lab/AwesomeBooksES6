@@ -5,7 +5,7 @@
 > .This project is BookStore so the user can add books by just enter Book name and the author After the user add it,
 it already displayed in the top of the page and can remove it by remove button.
 
-<img src="Capture.PNG`" width="70%" />
+<img src="Capture.PNG" width="70%" />
 
 ## Built With
 
