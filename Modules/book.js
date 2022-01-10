@@ -1,7 +1,6 @@
-const bookContainer = document.querySelector(".book-container");
-const inpTitle = document.querySelector("#title");
-const inpAutor = document.querySelector("#author");
+import { addBookToLibrary } from "./repetition.js"
 
+const bookContainer = document.querySelector(".book-container");
 export class Book {
     static collection = []
   
@@ -48,7 +47,7 @@ export class Book {
     }
   
     saveBooks() {
-      const book = new Book(inpTitle.value, inpAutor.value)
+      const book = new Book(inpTitle.value, inpAuthor.value)
       Book.collection.push(book)
       Book.setLocalStorage(Book.collection)
       this.showBook(book)

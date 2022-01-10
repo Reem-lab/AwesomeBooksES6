@@ -1,4 +1,4 @@
-export default addNavLinks = () => {
+export const addNavLinks = () => {
   const [list, addNew, contact] = document.querySelectorAll(".link")
   const contactSection = document.querySelector(".contact-section")
   const sec = document.querySelector(".sec")
