@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Reem-lab/AwesomeBooksES6#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "luxon": "^2.3.0",
     "three": "^0.136.0"
   }
 }

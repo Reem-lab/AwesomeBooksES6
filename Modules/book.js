@@ -1,4 +1,6 @@
-import { addBookToLibrary } from "./repetition.js"
+import { checkRepetition } from "./repetition.js"
+const inpAuthor = document.querySelector("#author");
+const inpTitle = document.querySelector("#title");
 
 const bookContainer = document.querySelector(".book-container");
 export class Book {
@@ -52,4 +54,16 @@ export class Book {
       Book.setLocalStorage(Book.collection)
       this.showBook(book)
     }
+
+    
   }
+
+  export const addBookToLibrary = () => {
+    const inputTitleValue = inpTitle.value
+    const inputAuthorValue = inpAuthor.value
+    const book = new Book(inputTitleValue, inputAuthorValue)
+    if (checkRepetition(book)) {
+      book.saveBooks()
+    }
+  }
+  
