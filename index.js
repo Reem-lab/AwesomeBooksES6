@@ -1,6 +1,17 @@
 import {Book} from "./Modules/book.js";
-import { addBookToLibrary } from "./Modules/repetition.js"
+import { addBookToLibrary } from "./Modules/book.js"
 import { addNavLinks } from "./Modules/navlinks.js"
+const inpAuthor = document.querySelector("#author");
+const inpTitle = document.querySelector("#title");
+const dateContainer = document.querySelector('.date');
+import { DateTime } from "luxon";
+
+
+const now = DateTime.now().toLocaleString();
+
+dateContainer.innerHTML = `<span>${now}</span>`;
+
+
 
 const book = new Book()
 const form = document.querySelector(".form")
@@ -21,25 +32,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 addNavLinks();
 
-// const [list, addNew, contact] = document.querySelectorAll(".link")
-//   const contactSection = document.querySelector(".contact-section")
-//   const sec = document.querySelector(".sec")
-//   const sec1 = document.querySelector(".sec1")
-
-// list.addEventListener("click", () => {
-//   contactSection.classList.add("hidden")
-//   sec1.classList.add("hidden")
-//   sec.classList.remove("hidden")
-// })
-
-// addNew.addEventListener("click", () => {
-//   contactSection.classList.add("hidden")
-//   sec1.classList.remove("hidden")
-//   sec.classList.add("hidden")
-// })
-
-// contact.addEventListener("click", () => {
-//   contactSection.classList.remove("hidden")
-//   sec1.classList.add("hidden")
-//   sec.classList.add("hidden")
-// })
