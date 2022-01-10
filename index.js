@@ -4,14 +4,10 @@ import { addNavLinks } from "./Modules/navlinks.js"
 const inpAuthor = document.querySelector("#author");
 const inpTitle = document.querySelector("#title");
 const dateContainer = document.querySelector('.date');
-import { DateTime } from "luxon";
+import { DateTime } from "./node_modules/luxon/src/luxon.js";
 
-
-const now = DateTime.now().toLocaleString();
-
-dateContainer.innerHTML = `<span>${now}</span>`;
-
-
+const theTime = DateTime.now().toLocaleString(DateTime.DATETIME_MED)
+dateContainer.innerHTML = `${theTime}`
 
 const book = new Book()
 const form = document.querySelector(".form")
